@@ -1,0 +1,44 @@
+# Core dependencies for RNA 3D folding pipeline
+# Python 3.10+
+
+# Data processing
+polars>=0.20.0
+numpy>=1.24.0
+pandas>=2.0.0  # Optional, only if needed for compatibility
+
+# JAX ecosystem (for GPU acceleration)
+jax[cuda12]>=0.4.20  # Use cuda11 if on CUDA 11.x
+jaxlib>=0.4.20
+
+# Equivariant neural networks
+e3nn-jax>=0.20.0
+
+# Molecular simulation
+openmm>=8.0.0
+pdbfixer>=1.9
+
+# RNA-specific tools
+# ViennaRNA requires conda: conda install -c bioconda viennarna
+# Alternatively, if pip installation works: ViennaRNA>=2.6.0
+
+# Machine learning
+optax>=0.1.7  # JAX optimization library
+flax>=0.7.0  # Neural network library for JAX
+dm-haiku>=0.0.10  # Alternative NN library
+
+# Visualization (optional)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilities
+tqdm>=4.65.0
+pyyaml>=6.0
+scipy>=1.10.0
+
+# Development tools
+pytest>=7.4.0
+black>=23.0.0
+ruff>=0.1.0
+
+# Kaggle specific
+kaggle>=1.5.16

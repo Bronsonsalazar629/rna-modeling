@@ -1,0 +1,9 @@
+﻿miniconda_installer.exe
+__pycache__/
+*.pyc
+*.pkl
+*.pth
+*.exe
+data/raw/
+data/processed/
+.kaggle/
